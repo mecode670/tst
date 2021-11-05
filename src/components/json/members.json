@@ -1,0 +1,24 @@
+{
+    "employee": [
+        {
+            "name": "Elon Musk",
+            "image": "https://wp.technologyreview.com/wp-content/uploads/2020/02/elon-musk-ap-5.jpg",
+            "work": "Investor",
+            "id": "elon"
+
+        },
+        {
+            "name": "Bill Gates",
+            "image": "https://www.penguin.co.uk/content/dam/prh/articles/adults/2021/january/BillGates_1800x1200.jpg",
+            "work": "Software Developer",
+            "id": "bill"
+
+        },
+        {
+            "name" : "Ahmed Shaheen",
+            "image": "https://scontent.fcok1-1.fna.fbcdn.net/v/t39.30808-6/240828424_4572036919508035_2913128886749743447_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=KTkHmHaITk0AX-pqgho&_nc_ht=scontent.fcok1-1.fna&oh=b09f5eb3c89ef26bd4e3a660c4d44665&oe=6188E33F",
+            "work": "Owner",
+            "id": "shaheen"
+        }
+    ]
+}

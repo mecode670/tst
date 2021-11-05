@@ -1,0 +1,35 @@
+{
+    "articles":[
+        {
+            "title": "Halwa",
+            "price": "₹335",
+            "key": "halwa",
+            "img": "https://res.cloudinary.com/mecode670/image/upload/v1635952436/haluwa_kjuttd.jpg"
+            
+        },
+        {
+            "title": "Porotta",
+            "price": "₹100",
+            "key": "porotta",
+            "img": "https://res.cloudinary.com/mecode670/image/upload/v1635952822/porotta_wqraim.jpg"
+        },
+        {
+            "title": "Grilled Chicken",
+            "price": "₹340",
+            "key": "grilledChicken",
+            "img": "https://res.cloudinary.com/mecode670/image/upload/v1635952822/grill_k93r5q.jpg"
+        },
+        {
+            "title": "Chicken Nuggets",
+            "price": "₹100",
+            "key": "nuggets",
+            "img": "https://res.cloudinary.com/mecode670/image/upload/v1635952871/brett-jordan-TEplqAWpCIs-unsplash_rae4sr.jpg"
+        },  
+        {
+            "title": "Shawarma",
+            "price": "₹65",
+            "key": "shawarma",
+            "img": "https://res.cloudinary.com/mecode670/image/upload/v1635961218/photo-1561651823-34feb02250e4_wjc7es.jpg"
+        }
+    ]
+}
