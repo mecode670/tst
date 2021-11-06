@@ -5,6 +5,7 @@ import Home from './components/js/pages/Home'
 import About from './components/js/pages/About.js'
 import Contact from './components/js/pages/Contact'
 import ContactState from './context/contactState'
+import Dialog from './components/js/model/dialog'
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,7 +32,8 @@ const App = () => {
                     <About />
                 </Route>
                 <Route exact path="/contact">
-                    <Contact />
+                    <Contact /> 
+                    <Dialog/>
                 </Route>
             </Switch>
         </Router></ContactState>

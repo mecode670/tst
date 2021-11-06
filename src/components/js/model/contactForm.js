@@ -1,12 +1,15 @@
-import React from "react";
+import React, {useContext} from "react";
 import "../../css/body-gray.css";
-const contactForm = (props) => {
+import ContactContext from "../../../context/ContactContext";
+const ContactForm = (props) => {
+  const context = useContext(ContactContext)
+  const {isOpen} = context
   return (
     <>
     <div className="invisible h-6" >
 
     </div>
-    <div className="relative flex items-top justify-center m-0 min-h-screen dark:bg-gray-900 sm:items-center sm:pt-0 lg:bottom-10 sm:bottom:15">
+    <div className={`relative flex items-top justify-center m-0 min-h-screen dark:bg-gray-900 sm:items-center sm:pt-0 lg:bottom-10 sm:bottom:15 ${isOpen === true ?"filter blur-lg" : ""}`}>
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div className="mt-8 overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
@@ -105,7 +108,7 @@ const contactForm = (props) => {
                   type="name"
                   name="name"
                   id="name"
-                  required
+                  red
                   placeholder="Full Name"
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                 />
@@ -121,7 +124,7 @@ const contactForm = (props) => {
                   type="email"
                   name="email"
                   id="email"
-                  required
+                  
                   placeholder="Email"
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                 />
@@ -130,7 +133,7 @@ const contactForm = (props) => {
               <div className="flex flex-wrap mb-6">
                 <div className="relative w-full appearance-none label-floating">
                   <textarea
-                  required
+                  
                     value={props.message}
                     onChange={props.onChange}
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none autoexpand overflow-hidden resize-none py-2 px-4 mb-3 leading-relaxed appearance-none block w-full"
@@ -166,4 +169,4 @@ const contactForm = (props) => {
   );
 };
 
-export default contactForm;
+export default ContactForm;
