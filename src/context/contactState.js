@@ -1,7 +1,6 @@
 import React from 'react'
 import ContactContext from './ContactContext'
 import { useState } from "react";
-import emailjs from "emailjs-com"
 
 const ContactState = (props) => {
     

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React from 'react'
 import Navbar from './components/js/model/Navbar'
 import './components/css/tap-highlight.css'
 import Home from './components/js/pages/Home'

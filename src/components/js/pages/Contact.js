@@ -27,10 +27,6 @@ const  Contact = (props) => {
     };
 
   const {credentials, setCredentials} = context;
-  const {name, email, message} = credentials;
-    const onChange = (e) => {
-      context.setCredentials({ ...context.credentials, [e.target.name]: e.target.value });
-    };
     return (
       <ContactForm sendEmail={sendEmail} onChange={context.onChange} name={credentials.name} email={credentials.email} message={credentials.message}/>
   );
