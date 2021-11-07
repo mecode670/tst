@@ -1,5 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 import contactContext from '../../../context/ContactContext'
 import {useContext} from 'react'
 import '../../css/font.css'
@@ -11,11 +11,6 @@ export default function MyModal(props) {
   function closeModal() {
     setIsOpen(false)
   }
-
-  function openModal() {
-    setIsOpen(true)
-  }
-
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
